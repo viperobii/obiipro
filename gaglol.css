@@ -1,0 +1,154 @@
+/* General item styles */
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  top: 30px;
+  left: 490px;
+
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  background-size: 400% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: rainbowTitle 6s linear infinite;
+}
+
+.item p {
+  /* all your styles */
+  font-weight: bold;
+  font-size: 18px;
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  background-size: 400% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbowTitle 6s linear infinite;
+}
+
+
+/* Keyframes for color-changing animation */
+@keyframes rainbowTitle {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 400% 50%;
+  }
+}
+
+
+/* background image */
+body {
+  background-image: url('https://progameguides.com/wp-content/uploads/2025/04/Featured-Complete-Grow-a-Garden-Beginners-Guide-Weather-Events-Gears-and-More.jpg?fit=1200%2C675');
+  background-size: cover;        /* Make image cover entire screen */
+  background-position: center;   /* Center the image */
+  background-repeat: no-repeat;  /* Don’t repeat the image */
+  background-attachment: fixed;  /* Keeps background fixed when scrolling */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+
+.item {
+  display: inline-block;
+  margin: 30px;
+  background-color: grey;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.item p {
+  font-size: 18px;
+  color: red;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.item img {
+  width: 120px;
+  height: 130px;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+  position: relative; /* Needed for left/top/right/bottom */
+}
+
+/* Move Racoon image */
+.racoon img {
+  left: -1px;  /* Move Racoon image 50px left */
+  left: 2px;
+}
+
+/* Move Dragonfly image */
+.dragonfly img {
+  left: -1px;   /* Move Dragonfly image 30px right */
+  left: 2px;
+}
+
+
+.octopus img {
+  left: -0px;
+  left: 5px;
+}
+
+.cat img {
+  left: -0px;
+  left: 2px;
+}
+
+.bee img {
+  left: -0px;
+  left: 2px;
+}
+
+.cart-btn {
+  margin-top: 10px;
+  padding: 10px 18px;
+  font-size: 15px;
+  background-color: rgba(135, 206, 235, 0.3); /* transparent skyblue */
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);  /* optional subtle border */
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  /* Blur effect */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  /* Soft shadow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+  transition: all 0.3s ease;
+}
+
+.cart-btn:hover {
+  background-color: rgba(135, 206, 250, 0.4); /* slightly stronger blue on hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
